@@ -7,9 +7,6 @@
     .text-bg {
         padding-left: 37px;
     }
-    .text-bg h1 {
-        font-size: 130px;
-    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -22,13 +19,17 @@
         font-size: 14px;
     }
     .text-bg h1 {
-        font-size: 118px;
-        line-height: 116px;
+        font-size: 65px;
+        line-height: 95px;
         padding-bottom: 11px;
     }
     .text-bg span {
-        font-size: 45px;
-        line-height: 60px;
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+    .text-bg p{
+        font-size: 20px;
     }
     .text-bg {
         padding-left: 38px;
@@ -47,18 +48,27 @@
         padding: 0 18px;
     }
     .banner_main {
-        min-height: 513px;
-        padding-top: 0px;
+        /* min-height: 513px; */
+        padding-top: 20px;
     }
     .text-bg h1 {
-        font-size: 90px;
-        line-height: 110px;
+        font-size: 60px;
+        line-height: 90px;
         padding-bottom: 10px;
     }
     .text-bg span {
-        font-size: 34px;
+        font-size: 32px;
         line-height: 33px;
     }
+
+    .text-bg p{
+        font-size: 16px;
+    }
+
+    .text-bg p.subtitle{
+        font-size: 20px;
+   }
+
     .text-bg a {
         max-width: 139px;
         padding: 9px 0px;
@@ -66,13 +76,18 @@
     .text-bg {
         padding-left: 32px;
     }
+
+    .text_img figure img {
+        width: 100%;
+    }
+
     #banner1 .carousel-control-next {
         left: 7%;
     }
-    #banner1 a.carousel-control-next,
+    /* #banner1 a.carousel-control-next,
     #banner1 a.carousel-control-prev {
         top: 121%;
-    }
+    } */
     .service_box p {
         font-size: 16px;
     }
@@ -98,17 +113,34 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
     .text-bg h1 {
-        font-size: 109px;
-        line-height: 108px;
-        padding-bottom: 20px;
+        font-size: 60px;
+        line-height: 90px;
+        padding-bottom: 10px;
     }
+    .text-bg span {
+        font-size: 32px;
+        line-height: 33px;
+    }
+
+    .text-bg p{
+        font-size: 16px;
+    }
+
+    .text-bg p.subtitle{
+        font-size: 20px;
+   }
     .text-bg {
         padding-left: 0px;
         padding-bottom: 30px;
     }
-    .text-bg span {
+    /* .text-bg span {
         font-size: 44px;
+    } */
+
+    .text_img figure img {
+        width: 75%;
     }
+
     .box_text {
         margin-top: 30px;
         box-shadow: #ddd 0px 0px 7px 0px;
@@ -176,7 +208,7 @@
         float: right;
     }
     .text-bg h1 {
-        font-size: 68px;
+        font-size: 58px;
         line-height: 70px;
         padding-bottom: 10px;
     }
@@ -198,6 +230,11 @@
         max-width: 132px;
         padding: 10px 0px;
     }
+
+    .text_img figure img {
+        width: 50%;
+    }
+
     .titlepage h2 {
         font-size: 27px;
         line-height: 22px;
