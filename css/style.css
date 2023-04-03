@@ -377,7 +377,7 @@ ul.btn li:last-child {
 
 .logo{
      height: 9rem;   
-     width: 16.9rem;  
+     width: 15rem;  
      overflow:hidden; 
 }
 
@@ -639,12 +639,11 @@ ul li a i{
 }
 
 .service .titlepage {
-     padding-bottom: 2rem;
+     padding-bottom: 0rem;
 }
 
 .container_card{
      max-width: 120rem;
-     padding: 2rem;
      padding-bottom: 4rem;
      margin: auto;
      margin-top: 2rem;
