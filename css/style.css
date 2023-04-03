@@ -3,9 +3,9 @@
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+/* @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
@@ -81,11 +81,11 @@ h6 {
 }
 
 h1 {
-     font-size: 2.4rem;
+     font-size: 4rem;
 }
 
 h2 {
-     font-size: 2.2rem;
+     font-size: 3.5rem;
 }
 
 h3 {
@@ -153,19 +153,11 @@ a,
 
 img {
      max-width: 100%;
-     height: auto;
+     display: block;
 }
 
  :focus {
      outline: 0;
-}
-
-.btn-custom {
-     margin-top: 20rem;
-     background-color: transparent !important;
-     border: 0.2rem solid #ddd;
-     padding: 1.2rem 4rem;
-     font-size: 1.6rem;
 }
 
 .form-control:focus {
@@ -253,7 +245,7 @@ button {
 }
 
 .loader img {
-     width: 28rem;
+     width: 10rem;
 }
 
 ul.btn {
@@ -354,15 +346,16 @@ ul.btn li:last-child {
      color: #fff;
 }
 
-ul.email {
+.email {
+     flex-wrap: wrap;
      justify-content: space-evenly;
 }
 
-ul.email li {
+.email li {
      display: inline-block;
 }
 
-ul.email li a {
+.email li a {
      padding: 0 .8rem;
      color: #1b1a1b;
      font-size: 1.5rem;
@@ -382,6 +375,12 @@ ul.email li a {
      z-index: 999; */
 }
 
+.logo{
+     height: 9rem;   
+     width: 16.9rem;  
+     overflow:hidden; 
+}
+
 .logo a {
      font-size: 4rem;
      font-weight: bold;
@@ -390,9 +389,6 @@ ul.email li a {
      line-height: 4rem;
 }
 
-.logo a img {
-     height: 8.5rem;
-}
 
 .sociales li {
      display: inline-block;
@@ -404,7 +400,12 @@ ul.email li a {
      line-height: 2rem;
      display: flex;
      height: 3em;
+     transition: all 300ms ease-in-out;
 }
+
+.sociales li a img:hover {
+     transform: scale(1.2);
+ }
 
 ul li a i{
      color: var(--dorado);
@@ -426,6 +427,11 @@ ul li a i{
      align-items: center;
 }
 
+.text_img {
+     height: 100%;
+     margin: 0 auto;
+}
+
 .text-bg {
      text-align: justify;
      padding: 2rem 3.2rem;
@@ -434,8 +440,8 @@ ul li a i{
 .text-bg h1 {
      text-transform: uppercase;
      color: var(--dorado);
-     font-size: 6rem;
-     line-height: 9rem;
+     font-size: 4rem;
+     line-height: 6rem;
      /* padding-bottom: 35px; */
      font-weight: bold;
 }
@@ -443,8 +449,8 @@ ul li a i{
 .text-bg span {
      /* text-transform: uppercase; */
      color: var(--dorado);
-     font-size: 4.5rem;
-     line-height: 6.8rem;
+     font-size: 3rem;
+     line-height: 4.5rem;
      font-weight: 700;
      display: block;
      text-align: left;
@@ -454,17 +460,17 @@ ul li a i{
 
 .text-bg p {
      line-height: 3.5rem;
-     font-weight: 500;
+     font-weight: 400;
      padding-bottom: 0.5rem;
      display: block;
-     font-size: 2rem;
+     font-size: 1.7rem;
      color: #494949;
      margin-top: 2rem;
 }
 
 .text-bg p.subtitle{
      color: #494949;
-     font-weight: 500;
+     font-weight: 700;
      font-size: 2.5rem;
      line-height: 3.6rem;
      margin-top: .5rem;
@@ -478,12 +484,18 @@ ul li a i{
      padding-left: 4rem;
 }
 
+.text_img{
+     display: flex;
+     align-items: flex-end;
+}
+
 .text_img figure {
      margin: 0;
 }
 
 .text_img figure img {
-     width: 80%;
+     width: 75%;
+     margin: 0 auto;
 }
 
 .carousel-caption {
@@ -534,7 +546,7 @@ ul li a i{
 }
 
 .text-bg a, .about a, .main_form button {
-     font-size: 2rem;
+     font-size: 1.7rem;
      /* background-color: #fff; */
      /* color: #000; */
      font-weight: 600;
@@ -544,7 +556,7 @@ ul li a i{
      text-align: center;
      display: inline-block;
      transition: ease-in all 0.5s;
-     margin: 1rem .5rem;
+     margin: 3rem .5rem;
 }
 
 /* .text-bg a:hover {
@@ -562,10 +574,9 @@ ul li a i{
 }
 
 .titlepage h2 {
-     font-size: 4rem;
      color: #1d1b28;
      line-height: 5.5rem;
-     font-weight: 800;
+     font-weight: 900;
      padding: 0;
 }
 
@@ -655,8 +666,6 @@ ul li a i{
 
 
 .service_box h3 {
-     color: #070803;
-     font-size: 2.5rem;
      text-transform: uppercase;
      line-height: 2.5rem;
      transition: ease-in all 0.5s;
@@ -665,7 +674,6 @@ ul li a i{
 .service_box p {
      font-size: 1.7rem;
      line-height: 2.7rem;
-     color: #2e2e2e;
      transition: ease-in all 0.5s;
 }
 
@@ -703,6 +711,10 @@ ul li a i{
      border-radius: 2rem;
  }
 
+ .service_img img{
+     min-width: 30rem;
+ }
+
  .service_description{
      width: 100%;
      height: 22rem;
@@ -728,7 +740,7 @@ ul li a i{
      overflow: hidden;
  }
 
- .service_description a{
+ .btn {
      margin-top: 2rem;
      padding: 1rem 4rem;
      font-weight: 500;
@@ -740,7 +752,7 @@ ul li a i{
      transition: box-shadow 300ms;
  }
  
- .service_description input:hover{
+ .btn:hover{
      box-shadow: 1px 1px 3rem -.5rem #20202070;
  }
  
@@ -759,10 +771,9 @@ ul li a i{
 /** about section **/
 
 .about {
-     background: url(../images/about-bg01.png);
-     background-size: 100% 100%;
+     background: url(../images/about-bg.jpg);
+     background-size: cover;
      background-repeat: no-repeat;
-     height: 100vh;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -778,19 +789,28 @@ ul li a i{
      color: #fff;
 } */
 
-.about .titlepage p {
+.about p {
      color: #494949;
      font-size: 1.7rem;
      line-height: 3rem;
-     font-weight: 500;
-     margin-bottom: 3rem;
+     font-weight: 400;
      margin-top:  6rem;
-     text-align: start;
+     text-align: justify;
+     display: -webkit-box;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
 }
 
-.about .titlepage .read_more:hover {
-     background: #fff;
-     color: #bc1939 !important;
+.about-img{
+     height: 100%;
+     display: flex;
+     align-items: end;
+}
+
+.about-img figure {
+     margin: 0 2rem;
 }
 
 
@@ -846,11 +866,16 @@ ul li a i{
      padding-right: 2rem;
 }
 
+.customer_Carousel .test_box img {
+     margin: 0 auto;
+}
+
 .customer_Carousel .test_box p {
      font-size: 1.7rem;
      line-height: 2.8rem;
      color: #1d1b28;
      margin-bottom: 3rem;
+     text-align: justify;
 }
 
 #myCarousel .carousel-indicators {
@@ -891,13 +916,14 @@ ul li a i{
 
 
 /** contact **/
-
+/* #ff577f */
 .contact {
-     background: url(../images/contact.jpg);
-     background-size: 100% 100%;
+     background: linear-gradient(to bottom, rgba(243, 237, 243, 0.52), rgba(247, 149, 222, 0.6)), url(../images/manelyspa01.jpeg);
+     background-size: cover;
      background-repeat: no-repeat;
      padding: 9rem 0;
 }
+
 
 .contact .titlepage h2 {
      color: #080707;
@@ -956,6 +982,10 @@ ul li a i{
      text-align: center;
 }
 
+.footer>div>div {
+     padding: 0 1rem;
+}
+
 .footer .titlepage {
      text-align: center;
      padding-bottom: 0px;
@@ -968,8 +998,6 @@ ul li a i{
 }
 
 .footer ul li {
-     font-size: 1.8rem;
-     font-weight: 200;
      line-height: 4rem;
 }
 
@@ -983,6 +1011,11 @@ ul li a i{
      height: auto;
 }
 
+.footer_logo img {
+     height: 25rem;
+     margin: 0 auto;
+}
+
 .footer_text {
      text-align: left;
      line-height: 2.5rem;
@@ -993,6 +1026,7 @@ ul li a i{
 .footer .sociales{
      text-align: left;
      margin-left: 2rem;
+     margin-top: 2rem;
 }
 
 .footer .sociales li a img{

@@ -40,6 +40,7 @@
         margin: 0px 0.1rem;
         font-size: 1.6rem;
     }
+
 }
 
 @media (min-width: 768px) and (max-width: 999px) {
@@ -47,46 +48,16 @@
         padding: 1rem 1.6rem;;
     }
     .banner_main {
-        /* min-height: 513px; */
         padding-top: 2rem;
-    }
-    /* .text-bg h1 {
-        font-size: 6rem;
-        line-height: 9rem;
-        padding-bottom: 1rem;
-    }
-    .text-bg span {
-        font-size: 3.2rem;
-        line-height: 3.3rem;
-    }
-
-    .text-bg p{
-        font-size: 1.6rem;
-    }
-
-    .text-bg p.subtitle{
-        font-size: 2rem;
-   } */
-
-    .text-bg a, .about a {
-        max-width: 13.9rem;
-        padding: 0.9rem 0rem;
     }
     .text-bg {
         padding: 2rem 3.2rem;
     }
 
-    .text_img figure img {
-        width: 100%;
-    }
-
     #banner1 .carousel-control-next {
         left: 7%;
     }
-    /* #banner1 a.carousel-control-next,
-    #banner1 a.carousel-control-prev {
-        top: 121%;
-    } */
+
     .service_box p {
         font-size: 1.6rem;
     }
@@ -96,9 +67,7 @@
     .d_none {
         display: none;
     }
-    /* ul.email {
-        display: none;
-    } */
+
     .bottom_form .enter {
         width: 58%;
     }
@@ -108,8 +77,9 @@
     .padd_bott {
         margin-bottom: 2rem;
     }
-    .email-container {
-        display: none;
+
+    .email li a {
+        font-size: 1.4rem;
     }
 }
 
@@ -160,7 +130,7 @@
         margin-bottom: 3rem;
     }
     ul.email {
-        display: none;
+        display: none !important;
     }
     .bottom_form h3 {
         padding-right: 3rem;
@@ -202,9 +172,6 @@
         background: url(../images/menu_icon.png);
         background-repeat: no-repeat;
     } */
-    .email-container {
-        display: none;
-    }
 }
 
 @media (max-width: 575px) {
@@ -234,18 +201,12 @@
     .margin_boot {
         margin-bottom: 2rem;
     }
-    .text-bg a, .about a {
-        max-width: 13.2rem;
-        padding: 1rem 0rem;
-    }
-
     .text_img figure img {
-        width: 50%;
+        width: 60%;
     }
 
     .titlepage h2 {
         font-size: 2.7rem;
-        line-height: 2.2rem;
     }
     .main_form .send_btn {
         margin-bottom: 3rem;
@@ -281,7 +242,7 @@
     }
     .navigation.navbar-light .navbar-nav .nav-link {
         padding: 1rem 0;
-        color: #666666;
+        font-size: 1.4rem;        
     }
     .navigation.navbar-light .navbar-nav .nav-link:focus,
     .navigation.navbar-light .navbar-nav .nav-link:hover {
@@ -301,7 +262,7 @@
     }
 
     .email {
-        display: none;
+        display: none !important;
     }
 
     .sociales li a img {
