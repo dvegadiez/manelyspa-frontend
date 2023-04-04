@@ -309,6 +309,10 @@ ul.btn li:last-child {
      text-transform: uppercase;
      
 }
+.navigation.navbar-light .navbar-nav .dropdown-menu .nav-link{
+     font-weight: 400;
+     font-size: 1.4rem;
+}
 
 .navigation.navbar-light .navbar-nav .nav-link:focus,
 .navigation.navbar-light .navbar-nav .nav-link:hover, 
@@ -326,6 +330,21 @@ ul.btn li:last-child {
 .navbar-expand-md .navbar-nav {
      padding-right: 1rem;
 }
+
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+     transform: none;
+     width: 60vw;
+     min-width: 20rem;
+ }
+
+ .btn-close{
+     font-size: 1.3rem;
+ }
+
+ .dropdown-menu{
+     border: none;
+     padding-left: 1.5rem;
+ }
 
 .padd_right {
      padding-right: 1rem;
@@ -379,6 +398,8 @@ ul.btn li:last-child {
      height: 9rem;   
      width: 15rem;  
      overflow:hidden; 
+     transition: opacity 0.5s ease-in-out;
+     opacity: 1;
 }
 
 .logo a {

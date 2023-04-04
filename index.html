@@ -47,7 +47,7 @@
                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-4 logo_section">
                   <div class="full">
                      <div class="center-desk">
-                        <div class="logo">
+                        <div class="logo" id="headerLogo">
                            <a href="index.html"><img src="images/logo.png" alt="#" /></a>
                         </div>
                      </div>
@@ -65,7 +65,7 @@
                         </ul>
                      </div>
                      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 col-6">
-                        <ul class="sociales d-flex flex-row justify-content-center">
+                        <ul class="sociales d-flex flex-row justify-content-end">
                            <li>
                               <a class="sociales__enlace" href="https://facebook.com/manelyspa">
                                  <img src="images/icono_facebook.svg" alt="Facebook">
@@ -86,14 +86,16 @@
                   </div>
                   <div class="row">
                      <div class="col-12">
-                        <nav class="navigation navbar navbar-expand-sm navbar-light">
+                        <nav class="navigation navbar navbar-expand-md navbar-light">
                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarsExample04"
-                              aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                              id="toogleMenu" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                            </button>
                            <div class="offcanvas offcanvas-end" id="navbarsExample04">
                               <div class="offcanvas-header border-bottom">
-                                 <h3 class="offcanvas-title" id="offcanvasNavbarLabel">MANELY SPA</h3>
+                                 <div class="logo">
+                                    <a href="#"><img src="images/logo.png" alt="#" /></a>
+                                 </div>
                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                               </div>
                               <div class="offcanvas-body justify-content-end">
@@ -104,9 +106,16 @@
                                     <li class="nav-item">
                                        <a class="nav-link" href="about.html">About</a>
                                     </li>
-                                    <li class="nav-item">
-                                       <a class="nav-link" href="services.html">Services</a>
-                                    </li>
+                                    <li class="nav-item dropdown">
+                                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                         Services
+                                       </a>
+                                       <ul class="dropdown-menu">
+                                         <li><a class="nav-link" href="/botox.html">Botox Fillers</a></li>
+                                         <li><a class="nav-link" href="/microneedeling.html">Microneedeling</a></li>
+                                         <li><a class="nav-link" href="/weight-loss.html">Weight Loss</a></li>
+                                       </ul>
+                                     </li>
                                     <li class="nav-item">
                                        <a class="nav-link" href="blog.html">Blog</a>
                                     </li>
@@ -139,7 +148,7 @@
                      <p>Combine luxury services with state of the art technologies with a focus on rejuvenating
                         the mind, body and soul.</p>
                      <!-- <p> We combine Luxury Services with state of the art technologies with a focus on Rejuvenating the Mind, Body and Soul.</p> -->
-                     <a class="btn btn-secondary" href="#">Book Now</a>
+                     <a class="btn btn-secondary" href="/contact.html">Book Now</a>
                   </div>
                </div>
                <div class="col-md-6">
@@ -172,7 +181,7 @@
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum inventore quos quibusdam vero, nemo
                      obcaecati? Esse ea, quos dolor omnis at voluptas, assumenda modi officiis magnam, provident placeat
                      perferendis est.</p>
-                  <a class="btn" href="#">Read More </a>
+                  <a class="btn" href="/botox.html">Read More </a>
                </div>
             </div>
 
@@ -185,7 +194,7 @@
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum inventore quos quibusdam vero, nemo
                      obcaecati? Esse ea, quos dolor omnis at voluptas, assumenda modi officiis magnam, provident placeat
                      perferendis est.</p>
-                  <a class="btn" href="#">Read More </a>
+                  <a class="btn" href="/microneedeling.html">Read More </a>
                </div>
             </div>
 
@@ -198,43 +207,7 @@
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum inventore quos quibusdam vero, nemo
                      obcaecati? Esse ea, quos dolor omnis at voluptas, assumenda modi officiis magnam, provident placeat
                      perferendis est.</p>
-                  <a class="btn" href="#">Read More </a>
-               </div>
-            </div>
-            <div class="service_box">
-               <div class="service_img">
-                  <i><img src="images/weigth-loss05.png" alt="#" /></i>
-               </div>
-               <div class="service_description">
-                  <h3>Weight Loss</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum inventore quos quibusdam vero, nemo
-                     obcaecati? Esse ea, quos dolor omnis at voluptas, assumenda modi officiis magnam, provident placeat
-                     perferendis est.</p>
-                  <a class="btn" href="#">Read More </a>
-               </div>
-            </div>
-            <div class="service_box">
-               <div class="service_img">
-                  <i><img src="images/weigth-loss05.png" alt="#" /></i>
-               </div>
-               <div class="service_description">
-                  <h3>Weight Loss</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum inventore quos quibusdam vero, nemo
-                     obcaecati? Esse ea, quos dolor omnis at voluptas, assumenda modi officiis magnam, provident placeat
-                     perferendis est.</p>
-                  <a class="btn" href="#">Read More </a>
-               </div>
-            </div>
-            <div class="service_box">
-               <div class="service_img">
-                  <i><img src="images/weigth-loss05.png" alt="#" /></i>
-               </div>
-               <div class="service_description">
-                  <h3>Weight Loss</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum inventore quos quibusdam vero, nemo
-                     obcaecati? Esse ea, quos dolor omnis at voluptas, assumenda modi officiis magnam, provident placeat
-                     perferendis est.</p>
-                  <a class="btn" href="#">Read More </a>
+                  <a class="btn" href="/weight-loss.html">Read More </a>
                </div>
             </div>
          </div>
@@ -252,7 +225,7 @@
                      <div class="decor"></div>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam id facere accusantium labore eaque minima suscipit excepturi libero quasi recusandae, quae placeat minus perspiciatis rerum voluptate ipsa nesciunt deleniti praesentium.</p>
                   </div>
-                  <a class="btn btn-secondary" href="#">Read More </a>
+                  <a class="btn btn-secondary" href="/about.html">Read More </a>
                </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12">
@@ -430,9 +403,6 @@
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                <div class="map-responsive">
-                  <!-- <iframe class="rounded-3"
-                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
-                     width="600" height="432" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe> -->
                      <iframe class="rounded-3" 
                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.07884124116!2d-80.37283838514234!3d25.767959283633925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b9e7fbd81e6b%3A0x2e43e2a5bb2ba212!2sManely%20spa%20medical%20center!5e0!3m2!1ses!2sca!4v1680550273464!5m2!1ses!2sca&q=Manelyspa+Medical+Center" 
                      width="100%" height="432" style="border:1;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -540,6 +510,20 @@
          }
 
       });
+   </script>
+   <script>
+      const menuLateral = document.getElementById("navbarsExample04");
+      const boton = document.getElementById("toogleMenu");
+      const logo = document.getElementById("headerLogo");
+
+      menuLateral.addEventListener('hidden.bs.offcanvas', event => {
+         logo.style.opacity = 1;
+      })
+
+      boton.addEventListener('click', event => {
+         logo.style.opacity = 0;
+      })
+
    </script>
    <!-- <script>
       function initMap() {
